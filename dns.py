@@ -5,8 +5,8 @@ import os
 DNS_QUERY = os.getenv('DNS_QUERY', 'www.google.com')
           
 def resolve(DNS_QUERY):
-i=0
-start_time = 0
+    i=0
+    start_time = 0
     try:
         for i in range(10):
             i = i + 1
