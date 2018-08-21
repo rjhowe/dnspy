@@ -4,7 +4,7 @@ import os
 
 DNS_QUERY = os.getenv('DNS_QUERY', 'www.google.com')
           
-def resolve(DNS_QUERY):
+def resolve():
     i=0
     start_time = 0
     try:
@@ -17,5 +17,5 @@ def resolve(DNS_QUERY):
                 str(start_time), str(time.time()))
 
 while True: 
-   resolve(DNS_QUERY)
+   resolve()
    time.sleep(5)
